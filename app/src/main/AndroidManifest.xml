@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manager.credit.creditmanagerpro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NewSafaricomDailer" />
+        <activity android:name=".CallBilaWorriesDailer" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <activity android:name=".MainActivity" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
+        <!-- android:value="ca-app-pub-1383320353699684/5228700820"/> -->
+        <activity android:name=".PrepaidCredit" />
+        <activity android:name=".PostpaidCredit" />
+        <activity android:name=".Service_Provider" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".PostPaid_Dailer" />
+        <activity android:name=".TelkomTarrifActivity" />
+        <activity android:name=".AirtelTariffActivity" />
+        <activity android:name=".Holla_dailer" />
+        <activity android:name=".NiajeDailer" />
+        <activity android:name=".Tujuane_dailer" />
+        <activity android:name=".AirtelTwoBobDailer" />
+        <activity android:name=".TubongeDailer" />
+        <activity android:name=".Slash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WalkThroughActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1383320353699684~5748631184" />
+
+        <receiver
+            android:name=".EndCallService"
+            android:enabled="true" />
+        <receiver
+            android:name=".NewAlarmReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PRECISE_CALL_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".NewPostpaid_Receiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PRECISE_CALL_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".TestActivity" />
+        <activity android:name=".RecentsTestActivity"></activity>
+    </application>
+
+</manifest>

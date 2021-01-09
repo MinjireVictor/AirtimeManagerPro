@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+    tools:context=".Service_Provider">
+
+    <Button
+        android:id="@+id/safaricom_button"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/safaricom_bg"
+        android:layout_marginTop="130dp"
+        android:text="safaricom" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="13dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="SELECT YOUR SERVICE PROVIDER"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="21dp"
+        android:background="#c0c0c0"
+        android:id="@+id/View2"
+
+        />
+
+    <Button
+        android:id="@+id/airtel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/safaricom_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
+        android:background="@drawable/button_bg"
+        android:text="Airtel" />
+
+    <Button
+        android:id="@+id/telkom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airtel_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="13dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/telkom_bg"
+        android:text="telkom" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+
+        android:layout_below="@+id/telkom_button"
+        android:layout_marginTop="50dp"
+        ads:adUnitId="ca-app-pub-1383320353699684/3471831523">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

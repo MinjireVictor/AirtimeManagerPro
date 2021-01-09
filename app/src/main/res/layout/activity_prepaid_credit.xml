@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PrepaidCredit">
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="55dp"
+        android:enabled="false"
+        android:ems="10"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:background="#eeeeee"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_field"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:divider="@drawable/keyboard_divider"
+        android:orientation="vertical"
+        android:id="@+id/keyboard"
+        android:showDividers="beginning|middle|end"
+        >
+
+        <TableRow style="@style/keyboard_row">
+            <TextView
+                android:id="@+id/t9_key_1"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_one"
+
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/t9_key_2"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_two"
+
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/t9_key_3"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_three"
+
+                android:textColor="#ffffff"
+                />
+        </TableRow>
+        <TableRow style="@style/keyboard_row">
+
+
+            <TextView
+                android:id="@+id/t9_key_4"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_four"
+                />
+            <TextView
+                android:id="@+id/t9_key_5"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_five"
+                />
+            <TextView
+                android:id="@+id/t9_key_6"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_six"
+                />
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+            <TextView
+                android:id="@+id/t9_key_7"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_seven"
+                />
+            <TextView
+                android:id="@+id/t9_key_8"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_eight"
+                />
+            <TextView
+                android:id="@+id/t9_key_9"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_nine"
+                />
+        </TableRow>
+        <TableRow style="@style/keyboard_row">
+
+            <TextView
+                android:id="@+id/t9_key_clear"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                />
+            <TextView
+                android:id="@+id/t9_key_0"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_zero"
+                />
+            <TextView
+                android:id="@+id/t9_key_backspace"
+                android:textColor="#ffffff"
+                style="@style/keyboard_number_button"
+                android:text="@string/btn_backspace"
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/credit_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@drawable/button_bg"
+        android:layout_below="@+id/keyboard"
+        android:layout_marginTop="20dp"
+        android:text="submit"
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:layout_alignLeft="@+id/keyboard"
+        android:layout_alignStart="@+id/keyboard"
+        android:layout_alignRight="@+id/keyboard"
+        android:layout_alignEnd="@+id/keyboard" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter maximum credit limit" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_below="@+id/credit_submit_button"
+        android:layout_marginTop="20dp"
+        ads:adUnitId="ca-app-pub-1383320353699684/4815205612">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+
+
+
+

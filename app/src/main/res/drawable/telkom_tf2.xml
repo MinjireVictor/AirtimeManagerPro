@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+
+    <item android:state_pressed="true">
+        <shape>
+            <corners
+                android:radius="3dp"
+                />
+            <padding
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"
+                android:bottom="0dp"
+                />
+            <size
+                android:height="70dp"
+                android:width="250dp"
+                />
+            <solid
+                android:color="#5dbb63"/>
+
+        </shape>
+
+    </item>
+    <item android:state_pressed="false">
+    <shape>
+        <corners
+            android:radius="3dp"
+            />
+        <padding
+            android:left="0dp"
+            android:right="0dp"
+            android:top="0dp"
+            android:bottom="0dp"
+            />
+        <size
+            android:height="70dp"
+            android:width="250dp"
+            />
+        <solid
+            android:color="#b0fc38"/>
+    </shape>
+    </item>
+
+
+
+</selector>
